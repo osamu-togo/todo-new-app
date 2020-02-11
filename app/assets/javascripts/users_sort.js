@@ -4,8 +4,7 @@ $(function(){
       let item = ui.item; 
       let item_data = item.data(); 
       let params = {_method: 'put'}; 
-      params[item_data.modelName] = { row_order_position: item.index() }
-      console.log(params)       
+      params[item_data.modelName] = { row_order_position: item.index()-1 }      
       $.ajax({
         type: 'POST',
         url: item_data.updateUrl, 
