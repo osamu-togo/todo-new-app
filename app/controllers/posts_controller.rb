@@ -34,7 +34,7 @@ class PostsController < ApplicationController
   end
 
   def sort
-    post = Post.find(params[:id])
+    post = Post.find(params[:post_id])
     post.update(post_params)
     render body: nil 
   end
