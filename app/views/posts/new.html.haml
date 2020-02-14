@@ -1,7 +1,7 @@
 .content__title
-  新規記事の作成
+  To-Do作成
 = form_with model: @post, class: :form, local: true do |form|
   = form.text_field :title, placeholder: :何する, class: :form__title
-  = form.select :priority, [ ['余裕あり'], ['普通'], ['なる早'], ['＄％Dfw#@jgi！！']], { placeholder: :優先度, selected: 1}, class: :form__priority
-  = form.text_area :content, placeholder: :具体的に理由とか手段とかも, class: :form__text
+  = form.select :priority, [ ['余裕あり'], ['普通'], ['なる早'], ['最優先']], { placeholder: :優先度, selected: 1}, class: :form__priority
+  = form.text_area :content, placeholder: :具体的な理由手段をご記入下さい, class: :form__text
   = form.submit '投稿する', class: :form__btn
