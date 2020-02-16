@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @post.build_task
   end
 
   def create
@@ -41,7 +42,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content, :priority, :row_order_position).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :content, :priority, :row_order_position, task_attributes: [:name]).merge(user_id: current_user.id)
   end
 
 end

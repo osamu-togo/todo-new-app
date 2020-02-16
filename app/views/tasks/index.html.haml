@@ -1,0 +1,5 @@
+.top_main
+  .top_main__title
+    今週の積み上げ
+- @tasks.each do |task|
+  = render partial: "task", locals: { task: task }
