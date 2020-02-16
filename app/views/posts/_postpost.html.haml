@@ -1,0 +1,13 @@
+.content{data: { model_name: post.class.name.underscore, update_url: post_sort_path(post)}}
+  .content__left
+    .content__left--image
+  .content__right
+    .content__right__top
+      = link_to post.title, post_path(post.id), class: "content__right__top--title"
+    .content__right__bottom
+      .content__right__bottom--userName
+        = post.user.nickname
+      .content__right__bottom--date
+        = post.created_at.strftime("%Y-%m-%d %H:%M")
+  .content__add
+    = link_to "削除", post_path(post.id), method: :delete, class: "content__add__delete"

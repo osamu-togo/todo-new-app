@@ -1,0 +1,12 @@
+.content
+  .content__left
+    .content__left--image
+  .content__right
+    .content__right__top
+      = link_to task.name, '#', class: "content__right__top--title"
+    .content__right__bottom
+      .content__right__bottom--userName
+      .content__right__bottom--date
+        = task.created_at.strftime("%Y-%m-%d %H:%M")
+  .content__add
+    = link_to "削除", '#', class: "content__add__delete"

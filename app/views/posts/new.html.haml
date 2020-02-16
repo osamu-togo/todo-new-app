@@ -1,6 +1,9 @@
 .content__title
   To-Do作成
 = form_with model: @post, class: :form, local: true do |form|
+  =form.fields :task do |form|
+    = form.select :name, ["\タスクを選んでください","肉カット","サラダ野菜","スープ仕込み","冷蔵庫掃除","棚掃除","その他"],{},class: :form_title
+  %i.fas.fa-chevron-down
   = form.text_field :title, placeholder: :何する, class: :form__title
   = form.select :priority, [ ['余裕あり'], ['普通'], ['なる早'], ['最優先']], { placeholder: :優先度, selected: 1}, class: :form__priority
   = form.text_area :content, placeholder: :具体的な理由手段をご記入下さい, class: :form__text
