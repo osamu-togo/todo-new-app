@@ -7,10 +7,12 @@
 # 機能
 ### 新規登録機能/ログイン機能
 <img src="https://i.gyazo.com/a4ef1efacd46b708f7a4ff6743b98809.png" width="400px">
+
 ### ToDoList投稿機能
 <img src="https://i.gyazo.com/21a3169e5a4ffb331c2879775e37e590.png" width="400px">
-### user画面　ドラック＆ドロップでの並び替え機能
 
+### user画面　ドラック＆ドロップでの並び替え機能
+![2020-02-19_23 43 59](https://user-images.githubusercontent.com/58455551/74847898-32b21780-5376-11ea-9bc6-523c6114d6be.gif)
 
 ### topページでの共有
 # 使用技術
