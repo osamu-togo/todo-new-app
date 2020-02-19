@@ -6,10 +6,11 @@
 ### 次の人に残せたら、より仕事が円滑でやりやすくなるだろうと思い制作しました。
 # 機能
 ### 新規登録機能/ログイン機能
-![新規登録画面](https://i.gyazo.com/a4ef1efacd46b708f7a4ff6743b98809.png)
+<img src="https://i.gyazo.com/a4ef1efacd46b708f7a4ff6743b98809.png" width="400px">
 ### ToDoList投稿機能
-![メイン画面](https://i.gyazo.com/21a3169e5a4ffb331c2879775e37e590.png)
+<img src="https://i.gyazo.com/21a3169e5a4ffb331c2879775e37e590.png" width="400px">
 ### user画面　ドラック＆ドロップでの並び替え機能
+
 
 ### topページでの共有
 # 使用技術
