@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: todo-new-app_production
-  username: todo-new-app
-  password: <%= ENV['TODO-NEW-APP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
