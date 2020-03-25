@@ -3,6 +3,9 @@ body{
   min-width: 650px;
   background-image: url(https://cdn.pixabay.com/photo/2016/08/12/03/51/notebook-1587526__480.jpg);
   background-size: cover;
+  @media only screen and ( max-device-width: 600px) {
+    max-width: 600px;
+  }
   .header{
     height: 56px;
     width: 100%;
